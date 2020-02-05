@@ -14,9 +14,8 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(stringOb){
 
   let output = {};
-  let newStringOb = (stringOb.split('').join("") );
 
-  for(let letter of newStringOb){
+  for(let letter of stringOb){
     if (output[letter]) {
       output[letter] += 1;
   } 
@@ -32,3 +31,4 @@ const countLetters = function(stringOb){
 }
 console.log(countLetters('LHL'));
 
+console.log(countLetters("lighthouse in the house"));
