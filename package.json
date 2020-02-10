@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@hammad96/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "project lotide week 1",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -22,5 +22,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.0.1"
+  },
+  "dependencies": {
+    "my-package": "0.0.0"
   }
 }
