@@ -1,13 +1,5 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = require("./assertEqual");
 
-  if (actual === expected) {
-    console.log(`🟢🟢🟢🟢🟢 Assertion passed:  ${actual} ===  ${expected} `);
-    return;
-  }if (actual !== expected) {
-    let returnOne = console.log(`🔴🔴🔴🔴🔴 Assertion failed:  ${actual} !==  ${expected}`);
-    return returnOne;
-  }
-}
 
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count

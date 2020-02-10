@@ -1,20 +1,7 @@
-const assertEqual = function(actual, expected) {
 
-  //let angryface = 🔴;
+const assertEqual = require("./assertEqual");
 
-  if (actual === expected) {
-    console.log(`🟢🟢🟢🟢🟢 Assertion passed:  ${actual} ===  ${expected} `);
-    return;
-  }
-    
-  if (actual !== expected) {
-    let returnOne = console.log(`🔴🔴🔴🔴🔴 Assertion failed:  ${actual} !==  ${expected}`);
-
-    return returnOne;
-  }
-
-}
-
+// const assertEqual = require('/assertEqual');
 const tail = function(array) {
 
   return array.slice(1);
