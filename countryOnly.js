@@ -6,23 +6,23 @@ const assertEqual = require("./assertEqual");
 
 
 
-const countOnly = function(allItems, itemsToCount) {
+const countOnly = function (allItems, itemsToCount) {
 
   const results = {}
 
-  for(const names of allItems){
+  for (const name of allItems) {
 
-    if (itemsToCount[names]){
-      if(results[names]){
-        results[names] = +1;
-      }else{
-        results[names] = 1;
+    if (itemsToCount[name]) {
+      if (results[name]) {
+        results[name] = +1;
+      } else {
+        results[name] = 1;
       }
 
     }
   }
 
-return results;
+  return results;
 
 }
 
