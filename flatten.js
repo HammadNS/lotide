@@ -1,16 +1,16 @@
 
 
-const flatten = function(arr) {
-  let output = [];
+const flatten = function (arr) {
+  let result = [];
   for (let i = 0; i < arr.length; i++) {
     // newString += ((string[i]) + "" )
     if (Array.isArray(arr[i]) === false) {
-      output.push(arr[i]);
+      result.push(arr[i]);
     } else {
-      output = output.concat(arr[i]);
+      result = output.concat(arr[i]);
     }
   }
-  return output;
+  return result;
 };
 
 module.exports = flatten;

@@ -17,7 +17,7 @@ const without = require('./without');
 const takeUntil = require('./takeUntil');
 
 
-
+// exports all modules
 module.exports = {
   head,
   tail,

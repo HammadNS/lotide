@@ -1,17 +1,17 @@
-const middle = function(array) {
-  let output = []
-  let index = Math.floor(array.length/2)
+const middle = function (array) {
+  let arr = []
+  let index = Math.floor(array.length / 2)
   if (array.length <= 2) {
-    return output
+    return arr
   }
   else if (array.length % 2 === 0) {
-      output.push(array[(index)-1])
-      output.push(array[(index)]) 
+    arr.push(array[(index) - 1])
+    arr.push(array[(index)])
   }
   else {
-    output.push(array[index])
+    arr.push(array[index])
   }
-  return output
+  return arr
 }
 
 module.exports = middle;
